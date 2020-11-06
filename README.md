@@ -4,4 +4,4 @@ petit jeu sympathique en javascript où le but est de survivre tout en cumulant 
 
 ### [Jouer](https://iriama.github.io/avalanche/index.html)
 
-![Screenshot](avalanche.png)
+![Screenshot](screenshot.png)
