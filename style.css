@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'EightBit';
+    src: url('fonts/8-bit.ttf');
+}
+
+/* Enléver les marges par défauts */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Centrer le canvas */
+#game {
+    /*border-style: solid;
+    border-color: black;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Overlay */
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+
+    font-family: 'EightBit';
+    text-align: center;
+    user-select: none;
+}
+.content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+
+    font-family: 'EightBit';
+    user-select: none;
+}
+
+#startContent {
+    font-size: 28px;
+    line-height: 60px;
+    text-align: center;
+}
+
+#gameOverContent {
+    font-size: 20px;
+}
+
+.hallOfFameElement {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.hallOfFameElement > span {
+    padding-left: 5px;
+}
+
+.current {
+    color: #fff;
+}
+
+#nicknameInput:focus{
+    outline: none;
+}
+#nicknameInput {
+    color: #fff;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+
+    width: 250px;
+
+    text-align: center;
+    font-family: 'EightBit';
+    font-size: 20px;
+}
+
+#footer {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+
+    font-family: 'EightBit';
+    text-align: center;
+    user-select: none;
+}
